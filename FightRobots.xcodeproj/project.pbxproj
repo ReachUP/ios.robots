@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		498970CC1B074266000DC54C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970CB1B074266000DC54C /* main.m */; };
+		498970CF1B074266000DC54C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970CE1B074266000DC54C /* AppDelegate.m */; };
+		498970D21B074266000DC54C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970D11B074266000DC54C /* ViewController.m */; };
+		498970D51B074266000DC54C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498970D31B074266000DC54C /* Main.storyboard */; };
+		498970D71B074266000DC54C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498970D61B074266000DC54C /* Images.xcassets */; };
+		498970DA1B074266000DC54C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498970D81B074266000DC54C /* LaunchScreen.xib */; };
+		498970E61B074266000DC54C /* FightRobotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970E51B074266000DC54C /* FightRobotsTests.m */; };
+		498970F31B07547D000DC54C /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970F21B07547D000DC54C /* Fraction.m */; };
+		498970F71B0754E6000DC54C /* Point.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970F61B0754E6000DC54C /* Point.m */; };
+		498970FC1B075535000DC54C /* Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970F91B075535000DC54C /* Direction.m */; };
+		498970FD1B075535000DC54C /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970FB1B075535000DC54C /* Robot.m */; };
+		4989710A1B07581B000DC54C /* PillsPack.m in Sources */ = {isa = PBXBuildFile; fileRef = 498971061B07581B000DC54C /* PillsPack.m */; };
+		4989710B1B07581B000DC54C /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 498971081B07581B000DC54C /* Queue.m */; };
+		498971141B075AA6000DC54C /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 498971131B075AA6000DC54C /* Stack.m */; };
+		4989711C1B075C25000DC54C /* BigFoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 498971191B075C25000DC54C /* BigFoot.m */; };
+		4989711D1B075C25000DC54C /* Spinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989711B1B075C25000DC54C /* Spinner.m */; };
+		498971211B0772A1000DC54C /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989711F1B0772A1000DC54C /* Board.m */; };
+		498971241B077B65000DC54C /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 498971231B077B65000DC54C /* NSMutableArray+Queue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		498970E01B074266000DC54C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 498970BE1B074266000DC54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 498970C51B074266000DC54C;
+			remoteInfo = FightRobots;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		498970C61B074266000DC54C /* FightRobots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FightRobots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		498970CA1B074266000DC54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498970CB1B074266000DC54C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		498970CD1B074266000DC54C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		498970CE1B074266000DC54C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		498970D01B074266000DC54C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		498970D11B074266000DC54C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		498970D41B074266000DC54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		498970D61B074266000DC54C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		498970D91B074266000DC54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		498970DF1B074266000DC54C /* FightRobotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FightRobotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		498970E41B074266000DC54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498970E51B074266000DC54C /* FightRobotsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FightRobotsTests.m; sourceTree = "<group>"; };
+		498970F01B07547D000DC54C /* Comparable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comparable.h; path = position/Comparable.h; sourceTree = "<group>"; };
+		498970F11B07547D000DC54C /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fraction.h; path = position/Fraction.h; sourceTree = "<group>"; };
+		498970F21B07547D000DC54C /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fraction.m; path = position/Fraction.m; sourceTree = "<group>"; };
+		498970F51B0754E6000DC54C /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Point.h; path = position/Point.h; sourceTree = "<group>"; };
+		498970F61B0754E6000DC54C /* Point.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Point.m; path = position/Point.m; sourceTree = "<group>"; };
+		498970F81B075535000DC54C /* Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Direction.h; path = robot/Direction.h; sourceTree = "<group>"; };
+		498970F91B075535000DC54C /* Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Direction.m; path = robot/Direction.m; sourceTree = "<group>"; };
+		498970FA1B075535000DC54C /* Robot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Robot.h; path = robot/Robot.h; sourceTree = "<group>"; };
+		498970FB1B075535000DC54C /* Robot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Robot.m; path = robot/Robot.m; sourceTree = "<group>"; };
+		498971051B07581B000DC54C /* PillsPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillsPack.h; sourceTree = "<group>"; };
+		498971061B07581B000DC54C /* PillsPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillsPack.m; sourceTree = "<group>"; };
+		498971071B07581B000DC54C /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		498971081B07581B000DC54C /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		498971091B07581B000DC54C /* Structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Structure.h; sourceTree = "<group>"; };
+		498971121B075AA6000DC54C /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		498971131B075AA6000DC54C /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		498971181B075C25000DC54C /* BigFoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BigFoot.h; path = robot/BigFoot.h; sourceTree = "<group>"; };
+		498971191B075C25000DC54C /* BigFoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BigFoot.m; path = robot/BigFoot.m; sourceTree = "<group>"; };
+		4989711A1B075C25000DC54C /* Spinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Spinner.h; path = robot/Spinner.h; sourceTree = "<group>"; };
+		4989711B1B075C25000DC54C /* Spinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Spinner.m; path = robot/Spinner.m; sourceTree = "<group>"; };
+		4989711F1B0772A1000DC54C /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Board.m; path = board/Board.m; sourceTree = "<group>"; };
+		498971201B0772A1000DC54C /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Board.h; path = board/Board.h; sourceTree = "<group>"; };
+		498971221B077B65000DC54C /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Queue.h"; sourceTree = "<group>"; };
+		498971231B077B65000DC54C /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		498970C31B074266000DC54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498970DC1B074266000DC54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		498970BD1B074266000DC54C = {
+			isa = PBXGroup;
+			children = (
+				498970C81B074266000DC54C /* FightRobots */,
+				498970E21B074266000DC54C /* FightRobotsTests */,
+				498970C71B074266000DC54C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		498970C71B074266000DC54C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				498970C61B074266000DC54C /* FightRobots.app */,
+				498970DF1B074266000DC54C /* FightRobotsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		498970C81B074266000DC54C /* FightRobots */ = {
+			isa = PBXGroup;
+			children = (
+				4989711E1B077113000DC54C /* board */,
+				498971041B07581B000DC54C /* struct */,
+				498970F41B0754B5000DC54C /* robot */,
+				498970EF1B07539D000DC54C /* position */,
+				498970CD1B074266000DC54C /* AppDelegate.h */,
+				498970CE1B074266000DC54C /* AppDelegate.m */,
+				498970D01B074266000DC54C /* ViewController.h */,
+				498970D11B074266000DC54C /* ViewController.m */,
+				498970D31B074266000DC54C /* Main.storyboard */,
+				498970D61B074266000DC54C /* Images.xcassets */,
+				498970D81B074266000DC54C /* LaunchScreen.xib */,
+				498970C91B074266000DC54C /* Supporting Files */,
+			);
+			path = FightRobots;
+			sourceTree = "<group>";
+		};
+		498970C91B074266000DC54C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				498970CA1B074266000DC54C /* Info.plist */,
+				498970CB1B074266000DC54C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		498970E21B074266000DC54C /* FightRobotsTests */ = {
+			isa = PBXGroup;
+			children = (
+				498970E51B074266000DC54C /* FightRobotsTests.m */,
+				498970E31B074266000DC54C /* Supporting Files */,
+			);
+			path = FightRobotsTests;
+			sourceTree = "<group>";
+		};
+		498970E31B074266000DC54C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				498970E41B074266000DC54C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		498970EF1B07539D000DC54C /* position */ = {
+			isa = PBXGroup;
+			children = (
+				498970F51B0754E6000DC54C /* Point.h */,
+				498970F61B0754E6000DC54C /* Point.m */,
+				498970F01B07547D000DC54C /* Comparable.h */,
+				498970F11B07547D000DC54C /* Fraction.h */,
+				498970F21B07547D000DC54C /* Fraction.m */,
+			);
+			name = position;
+			sourceTree = "<group>";
+		};
+		498970F41B0754B5000DC54C /* robot */ = {
+			isa = PBXGroup;
+			children = (
+				498971181B075C25000DC54C /* BigFoot.h */,
+				498971191B075C25000DC54C /* BigFoot.m */,
+				4989711A1B075C25000DC54C /* Spinner.h */,
+				4989711B1B075C25000DC54C /* Spinner.m */,
+				498970F81B075535000DC54C /* Direction.h */,
+				498970F91B075535000DC54C /* Direction.m */,
+				498970FA1B075535000DC54C /* Robot.h */,
+				498970FB1B075535000DC54C /* Robot.m */,
+			);
+			name = robot;
+			sourceTree = "<group>";
+		};
+		498971041B07581B000DC54C /* struct */ = {
+			isa = PBXGroup;
+			children = (
+				498971221B077B65000DC54C /* NSMutableArray+Queue.h */,
+				498971231B077B65000DC54C /* NSMutableArray+Queue.m */,
+				498971051B07581B000DC54C /* PillsPack.h */,
+				498971061B07581B000DC54C /* PillsPack.m */,
+				498971071B07581B000DC54C /* Queue.h */,
+				498971081B07581B000DC54C /* Queue.m */,
+				498971091B07581B000DC54C /* Structure.h */,
+				498971121B075AA6000DC54C /* Stack.h */,
+				498971131B075AA6000DC54C /* Stack.m */,
+			);
+			path = struct;
+			sourceTree = "<group>";
+		};
+		4989711E1B077113000DC54C /* board */ = {
+			isa = PBXGroup;
+			children = (
+				4989711F1B0772A1000DC54C /* Board.m */,
+				498971201B0772A1000DC54C /* Board.h */,
+			);
+			name = board;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		498970C51B074266000DC54C /* FightRobots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498970E91B074266000DC54C /* Build configuration list for PBXNativeTarget "FightRobots" */;
+			buildPhases = (
+				498970C21B074266000DC54C /* Sources */,
+				498970C31B074266000DC54C /* Frameworks */,
+				498970C41B074266000DC54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FightRobots;
+			productName = FightRobots;
+			productReference = 498970C61B074266000DC54C /* FightRobots.app */;
+			productType = "com.apple.product-type.application";
+		};
+		498970DE1B074266000DC54C /* FightRobotsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498970EC1B074266000DC54C /* Build configuration list for PBXNativeTarget "FightRobotsTests" */;
+			buildPhases = (
+				498970DB1B074266000DC54C /* Sources */,
+				498970DC1B074266000DC54C /* Frameworks */,
+				498970DD1B074266000DC54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				498970E11B074266000DC54C /* PBXTargetDependency */,
+			);
+			name = FightRobotsTests;
+			productName = FightRobotsTests;
+			productReference = 498970DF1B074266000DC54C /* FightRobotsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		498970BE1B074266000DC54C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Mira;
+				TargetAttributes = {
+					498970C51B074266000DC54C = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					498970DE1B074266000DC54C = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 498970C51B074266000DC54C;
+					};
+				};
+			};
+			buildConfigurationList = 498970C11B074266000DC54C /* Build configuration list for PBXProject "FightRobots" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 498970BD1B074266000DC54C;
+			productRefGroup = 498970C71B074266000DC54C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				498970C51B074266000DC54C /* FightRobots */,
+				498970DE1B074266000DC54C /* FightRobotsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		498970C41B074266000DC54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498970D51B074266000DC54C /* Main.storyboard in Resources */,
+				498970DA1B074266000DC54C /* LaunchScreen.xib in Resources */,
+				498970D71B074266000DC54C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498970DD1B074266000DC54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		498970C21B074266000DC54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498970D21B074266000DC54C /* ViewController.m in Sources */,
+				498971241B077B65000DC54C /* NSMutableArray+Queue.m in Sources */,
+				4989710A1B07581B000DC54C /* PillsPack.m in Sources */,
+				498970CF1B074266000DC54C /* AppDelegate.m in Sources */,
+				4989710B1B07581B000DC54C /* Queue.m in Sources */,
+				498970CC1B074266000DC54C /* main.m in Sources */,
+				498970FD1B075535000DC54C /* Robot.m in Sources */,
+				4989711D1B075C25000DC54C /* Spinner.m in Sources */,
+				498970FC1B075535000DC54C /* Direction.m in Sources */,
+				498970F71B0754E6000DC54C /* Point.m in Sources */,
+				498971141B075AA6000DC54C /* Stack.m in Sources */,
+				4989711C1B075C25000DC54C /* BigFoot.m in Sources */,
+				498970F31B07547D000DC54C /* Fraction.m in Sources */,
+				498971211B0772A1000DC54C /* Board.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498970DB1B074266000DC54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498970E61B074266000DC54C /* FightRobotsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		498970E11B074266000DC54C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 498970C51B074266000DC54C /* FightRobots */;
+			targetProxy = 498970E01B074266000DC54C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		498970D31B074266000DC54C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				498970D41B074266000DC54C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		498970D81B074266000DC54C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				498970D91B074266000DC54C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		498970E71B074266000DC54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		498970E81B074266000DC54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		498970EA1B074266000DC54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FightRobots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		498970EB1B074266000DC54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FightRobots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		498970ED1B074266000DC54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FightRobotsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FightRobots.app/FightRobots";
+			};
+			name = Debug;
+		};
+		498970EE1B074266000DC54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FightRobotsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FightRobots.app/FightRobots";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		498970C11B074266000DC54C /* Build configuration list for PBXProject "FightRobots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498970E71B074266000DC54C /* Debug */,
+				498970E81B074266000DC54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498970E91B074266000DC54C /* Build configuration list for PBXNativeTarget "FightRobots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498970EA1B074266000DC54C /* Debug */,
+				498970EB1B074266000DC54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498970EC1B074266000DC54C /* Build configuration list for PBXNativeTarget "FightRobotsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498970ED1B074266000DC54C /* Debug */,
+				498970EE1B074266000DC54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 498970BE1B074266000DC54C /* Project object */;
+}

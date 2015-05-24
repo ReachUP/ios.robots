@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "Robot.h"
+#import "BattleLog.h"
 
 @interface Board : NSObject {
     NSMutableArray *_robots;
+    BattleLog *battleLog;
     int _currentRobotIndex;
 }
 
@@ -22,9 +24,10 @@
 -(void) turnLeft;
 -(void) turnRight;
 -(void) move;
-
--(void) addRobot:(Robot*) robot;
 -(void) next;
 -(void) previous;
+
+-(void) addRobot:(Robot*) robot;
+-(void) printState;
 
 @end

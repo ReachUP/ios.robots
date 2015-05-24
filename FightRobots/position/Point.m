@@ -24,12 +24,12 @@
     if (![other isKindOfClass: [Point2D class]]) {
         @throw [NSException exceptionWithName:@"Can not compare" reason: @"The argumnt is not valid point type" userInfo: nil];
     }
-    
-    return ([self distanceFromBegin] - [(Point2D *)other distanceFromBegin]);
+    Point2D * otherPoint = (Point2D*)other;
+//    return ([self distanceFromBegin] - [(Point2D *)other distanceFromBegin]);
+    return !((self.x == otherPoint.x) && (self.y == otherPoint.y));
 }
 -(int) distanceFromBegin {
     int result = (abs(self.x) + abs(self.y));
-    NSLog(@"I am %@ and distance is %d", self, result);
     return result;
 }
 

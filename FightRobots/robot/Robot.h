@@ -11,27 +11,34 @@
 #import "Direction.h"
 #import "Comparable.h"
 
+@class RobotBattleLog;
+@class BattleLogEntry;
 
 @interface Robot : NSObject<Comparable> {
 @private
     Point2D * _position;
-    Direction faces; 
+    Direction faces;
+    RobotBattleLog * battleLog;
 }
 
-@property (atomic, readonly) Point2D* position;
-@property (atomic, readonly) Direction faces;
+@property (atomic, strong) Point2D* position;
+@property (atomic) Direction faces;
+@property (atomic, strong) NSString* name;
+@property (atomic, strong) NSDate* dateCreated;
 
-@property (atomic, readwrite) int maxStrenth;
-@property (atomic, readonly) int life;
+@property (atomic) int maxStrength;
+@property (atomic) int life;
 
 -(id) init;
 -(void) move;
 -(void) turnLeft;
 -(void) turnRight;
 
+-(void) takeDamage:(int) damage;
 -(bool) isDead;
 
+-(void) addToLog:(BattleLogEntry*) battleLogEntry;
+
 +(int) getStepSize;
-+(void) fight:(Robot*) attacker with:(Robot*) defender;
 
 @end

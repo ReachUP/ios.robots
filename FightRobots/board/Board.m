@@ -7,6 +7,8 @@
 //
 
 #import "Board.h"
+#import "Battle.h"
+#import "BattleLogEntry.h"
 
 @implementation Board(Private)
 
@@ -14,6 +16,34 @@
     //[_robots objectAtIndex:currentRobotIndex];
     return _robots[_currentRobotIndex];
 };
+
+-(NSMutableArray*) performBattleForRobot:(Robot*) attacker {
+    NSMutableArray * dead = [NSMutableArray array];
+    
+    for (Robot * defender in _robots) {
+        // for (int i = 0; i< [robots count]; i++) {
+        if (([attacker.position compare:defender.position] == 0) && (attacker != defender)) {
+            
+            Battle *battle = [[Battle alloc] initWithAttacker:attacker andDefender:defender];
+            
+            BattleResult result = [battle conduct];
+            
+            BattleLogEntry *battleLogEntry = [[BattleLogEntry alloc] initWithAttacker:attacker defender:defender result:result];
+            [battleLog addLogEntry:battleLogEntry];
+            [attacker addToLog:battleLogEntry];
+            [defender addToLog:battleLogEntry];
+            
+            if ([defender isDead]) {
+                [dead addObject:defender];
+            }
+            if ([attacker isDead]) {
+                [dead addObject:attacker];
+            }
+            break;
+        }
+    }
+    return dead;
+}
 
 @end
 
@@ -70,25 +100,19 @@ static Board *sharedSingleton;
 }
 
 -(void) move {
-    [[self currentRobot] move];
     
     Robot * attacker = [self currentRobot];
-    NSMutableArray * dead = [NSMutableArray array];
     
-    for (Robot * defender in _robots) {
- // for (int i = 0; i< [robots count]; i++) {
-        if ([attacker.position compare:defender.position] == 0) {
-            [Robot fight:attacker with:defender];
-            if ([defender isDead]) {
-                [dead addObject:defender];
-            }
-            if ([attacker isDead]) {
-                [dead addObject:attacker];
-                break;
-            }
-        }
-    }
+    [attacker move];
+    NSMutableArray * dead = [self performBattleForRobot:attacker];
+    
     [_robots removeObjectsInArray:dead];
 }
+
+-(void) printState {
+    NSLog(@"-----------------------------");
+    NSLog(@"\nList of robots: %@", _robots);
+    NSLog(@"\nCurrent robot: %@",_robots[_currentRobotIndex]);
+    NSLog(@"-----------------------------");}
 
 @end

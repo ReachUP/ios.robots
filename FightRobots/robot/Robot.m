@@ -7,42 +7,27 @@
 //
 
 #import "Robot.h"
+#import "RobotBattleLog.h"
+#import "BattleLogEntry.h"
 #include <stdlib.h>
 
 int dx[4] = {0, 1, 0, -1};
 int dy[4] = {1, 0, -1, 0};
 
-int const LIFE_DEDUCTION = 5;
 
 @implementation Robot
 
-@synthesize position = _position, faces = _faces, life = _life, maxStrenth = _maxStrenth;
-
-+(void) initialize {
-    NSLog(@"At initialize for class : %@", [self class]);
-}
-
-+(void) fight:(Robot *)attacker with:(Robot *)defender {
-    int attackStrenth = arc4random_uniform(attacker.maxStrenth);
-    int defenceStrenth = arc4random_uniform(defender.maxStrenth);
-    
-    int result = defenceStrenth - attackStrenth;
-    if (result > 0) {
-        attacker->_life -= LIFE_DEDUCTION;
-    } else if (result < -5) {
-        defender->_life -= LIFE_DEDUCTION;
-    } else {
-        defender->_life -= LIFE_DEDUCTION / 2;
-        attacker->_life -= LIFE_DEDUCTION / 2;
-    }
-}
+@synthesize position = _position, faces, life = _life, maxStrength = _maxStrength, name = _name, dateCreated = _dateCreated;
 
 -(id) init {
     if ([super init]) {
         _position = [Point2D new];
-        _faces = NORTH;
+        faces = NORTH;
         _life = 10;
-        _maxStrenth = 20;
+        _maxStrength = 20;
+        _name = @"";
+        _dateCreated = [NSDate date];
+        battleLog = [RobotBattleLog new];
     }
     return self;
 }
@@ -64,8 +49,12 @@ int const LIFE_DEDUCTION = 5;
     return (_life <= 0);
 }
 
+-(void) takeDamage:(int)damage {
+    _life -= damage;
+}
+
 -(NSString *) description {
-    return [NSString stringWithFormat: @"I am at %@, facing %@", [_position description], [DirectionHelper describe: faces]];
+    return [NSString stringWithFormat: @"%@(%i hp): I am at %@, facing %@", _name, _life, [_position description], [DirectionHelper describe: faces]];
 }
 
 +(int) getStepSize {
@@ -78,6 +67,10 @@ int const LIFE_DEDUCTION = 5;
     }
     
     return ([self.position compare:[(Robot *)other position]]);
+}
+
+-(void) addToLog:(BattleLogEntry*) battleLogEntry {
+    [battleLog addLogEntry:battleLogEntry];
 }
 
 @end

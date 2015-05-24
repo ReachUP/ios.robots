@@ -25,6 +25,20 @@
 		4989711D1B075C25000DC54C /* Spinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989711B1B075C25000DC54C /* Spinner.m */; };
 		498971211B0772A1000DC54C /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989711F1B0772A1000DC54C /* Board.m */; };
 		498971241B077B65000DC54C /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 498971231B077B65000DC54C /* NSMutableArray+Queue.m */; };
+		CE5C67A41B0B92EF002C14FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C67A31B0B92EF002C14FB /* UIKit.framework */; };
+		CE5C67A51B0B9473002C14FB /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970FB1B075535000DC54C /* Robot.m */; };
+		CE5C67A61B0B947C002C14FB /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989711F1B0772A1000DC54C /* Board.m */; };
+		CE5C67A71B0B94A9002C14FB /* BigFoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 498971191B075C25000DC54C /* BigFoot.m */; };
+		CE5C67A81B0B94C2002C14FB /* Point.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970F61B0754E6000DC54C /* Point.m */; };
+		CE5C67A91B0B94C9002C14FB /* Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 498970F91B075535000DC54C /* Direction.m */; };
+		CE89507B1B0F586800AFACE8 /* BattleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89507A1B0F586800AFACE8 /* BattleLog.m */; };
+		CE89507E1B0F587D00AFACE8 /* RobotBattleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89507D1B0F587D00AFACE8 /* RobotBattleLog.m */; };
+		CE8950811B0F588E00AFACE8 /* Battle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8950801B0F588E00AFACE8 /* Battle.m */; };
+		CE8950841B0F58A900AFACE8 /* BattleLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8950831B0F58A900AFACE8 /* BattleLogEntry.m */; };
+		CE8950851B10C13400AFACE8 /* Battle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8950801B0F588E00AFACE8 /* Battle.m */; };
+		CE8950861B10C14000AFACE8 /* BattleLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8950831B0F58A900AFACE8 /* BattleLogEntry.m */; };
+		CECF59DC1B122EA6000117B4 /* RobotBattleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89507D1B0F587D00AFACE8 /* RobotBattleLog.m */; };
+		CECF59DD1B122EBB000117B4 /* BattleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89507A1B0F586800AFACE8 /* BattleLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +89,15 @@
 		498971201B0772A1000DC54C /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Board.h; path = board/Board.h; sourceTree = "<group>"; };
 		498971221B077B65000DC54C /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Queue.h"; sourceTree = "<group>"; };
 		498971231B077B65000DC54C /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
+		CE5C67A31B0B92EF002C14FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE8950791B0F586800AFACE8 /* BattleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BattleLog.h; path = battleLog/BattleLog.h; sourceTree = "<group>"; };
+		CE89507A1B0F586800AFACE8 /* BattleLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BattleLog.m; path = battleLog/BattleLog.m; sourceTree = "<group>"; };
+		CE89507C1B0F587D00AFACE8 /* RobotBattleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RobotBattleLog.h; path = battleLog/RobotBattleLog.h; sourceTree = "<group>"; };
+		CE89507D1B0F587D00AFACE8 /* RobotBattleLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RobotBattleLog.m; path = battleLog/RobotBattleLog.m; sourceTree = "<group>"; };
+		CE89507F1B0F588E00AFACE8 /* Battle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Battle.h; path = board/Battle.h; sourceTree = "<group>"; };
+		CE8950801B0F588E00AFACE8 /* Battle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Battle.m; path = board/Battle.m; sourceTree = "<group>"; };
+		CE8950821B0F58A900AFACE8 /* BattleLogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BattleLogEntry.h; path = battleLog/BattleLogEntry.h; sourceTree = "<group>"; };
+		CE8950831B0F58A900AFACE8 /* BattleLogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BattleLogEntry.m; path = battleLog/BattleLogEntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5C67A41B0B92EF002C14FB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +122,7 @@
 		498970BD1B074266000DC54C = {
 			isa = PBXGroup;
 			children = (
+				CE5C67A31B0B92EF002C14FB /* UIKit.framework */,
 				498970C81B074266000DC54C /* FightRobots */,
 				498970E21B074266000DC54C /* FightRobotsTests */,
 				498970C71B074266000DC54C /* Products */,
@@ -116,6 +141,7 @@
 		498970C81B074266000DC54C /* FightRobots */ = {
 			isa = PBXGroup;
 			children = (
+				CE8950781B0F582A00AFACE8 /* battleLog */,
 				4989711E1B077113000DC54C /* board */,
 				498971041B07581B000DC54C /* struct */,
 				498970F41B0754B5000DC54C /* robot */,
@@ -206,8 +232,23 @@
 			children = (
 				4989711F1B0772A1000DC54C /* Board.m */,
 				498971201B0772A1000DC54C /* Board.h */,
+				CE89507F1B0F588E00AFACE8 /* Battle.h */,
+				CE8950801B0F588E00AFACE8 /* Battle.m */,
 			);
 			name = board;
+			sourceTree = "<group>";
+		};
+		CE8950781B0F582A00AFACE8 /* battleLog */ = {
+			isa = PBXGroup;
+			children = (
+				CE8950791B0F586800AFACE8 /* BattleLog.h */,
+				CE89507A1B0F586800AFACE8 /* BattleLog.m */,
+				CE89507C1B0F587D00AFACE8 /* RobotBattleLog.h */,
+				CE89507D1B0F587D00AFACE8 /* RobotBattleLog.m */,
+				CE8950821B0F58A900AFACE8 /* BattleLogEntry.h */,
+				CE8950831B0F58A900AFACE8 /* BattleLogEntry.m */,
+			);
+			name = battleLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +353,7 @@
 			files = (
 				498970D21B074266000DC54C /* ViewController.m in Sources */,
 				498971241B077B65000DC54C /* NSMutableArray+Queue.m in Sources */,
+				CE8950811B0F588E00AFACE8 /* Battle.m in Sources */,
 				4989710A1B07581B000DC54C /* PillsPack.m in Sources */,
 				498970CF1B074266000DC54C /* AppDelegate.m in Sources */,
 				4989710B1B07581B000DC54C /* Queue.m in Sources */,
@@ -323,7 +365,10 @@
 				498971141B075AA6000DC54C /* Stack.m in Sources */,
 				4989711C1B075C25000DC54C /* BigFoot.m in Sources */,
 				498970F31B07547D000DC54C /* Fraction.m in Sources */,
+				CE89507B1B0F586800AFACE8 /* BattleLog.m in Sources */,
+				CE8950841B0F58A900AFACE8 /* BattleLogEntry.m in Sources */,
 				498971211B0772A1000DC54C /* Board.m in Sources */,
+				CE89507E1B0F587D00AFACE8 /* RobotBattleLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +376,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5C67A61B0B947C002C14FB /* Board.m in Sources */,
+				CE5C67A51B0B9473002C14FB /* Robot.m in Sources */,
+				CE5C67A71B0B94A9002C14FB /* BigFoot.m in Sources */,
+				CE8950861B10C14000AFACE8 /* BattleLogEntry.m in Sources */,
+				CE5C67A91B0B94C9002C14FB /* Direction.m in Sources */,
+				CECF59DC1B122EA6000117B4 /* RobotBattleLog.m in Sources */,
+				CE5C67A81B0B94C2002C14FB /* Point.m in Sources */,
 				498970E61B074266000DC54C /* FightRobotsTests.m in Sources */,
+				CECF59DD1B122EBB000117B4 /* BattleLog.m in Sources */,
+				CE8950851B10C13400AFACE8 /* Battle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,27 +504,30 @@
 		498970EA1B074266000DC54C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FightRobots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		498970EB1B074266000DC54C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FightRobots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		498970ED1B074266000DC54C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -489,7 +546,6 @@
 		498970EE1B074266000DC54C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
